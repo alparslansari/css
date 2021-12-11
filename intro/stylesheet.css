@@ -1,0 +1,131 @@
+/* To set all elements '*' selector is used*/
+* {
+    color: black;
+}
+
+/*
+This selector finds the html element and styles it 
+*/
+body{
+    background-color: lightskyblue;
+    background-image: url("./images/sunset-g774c6935f_1920.jpg");
+}
+
+p {
+    font-size: larger; /* It increases the text font-size */
+    border-style: solid;
+    border-color: black;
+    border-width:thick; /* can specify px, em, mm, cm etc.*/
+    width: 50%;
+}
+
+/*
+# is the 'id' selector
+*/
+#menu {
+    background-color: aqua;
+}
+
+/*
+. is the 'class' selector
+*/
+.bookTitle {
+    font-style: italic;
+}
+
+
+/* descendant selector */
+div p {
+    background-color:lightpink;
+}
+
+/* child selector */
+div > p {
+    background-color: lightsalmon;
+}
+
+/* attribute selector */
+img[alt=spacer] {
+    padding: 0px;
+}
+/* Finds all img which has alt=spacer */
+/* <img src="gradient.jpg" alt="spacer"/> */
+
+/* psuedo class */
+a:visited { color: #dddddd;}
+/* visited a tag will be colored */
+
+
+/* Order of rule is significant, 
+latest rule overrides previous ones */
+
+/* Importing css files */
+@import url("foo.css");
+
+/* specificity = 2 */
+body > div {
+    background-color: red;
+}
+
+/* specificity = 1 */
+div {
+    background-color: aquamarine;
+}
+
+/* specificity = 0 */
+* {
+    background-color: green;
+}
+/* higher specificity has higher priority */
+/* 'id' usage also has higher priority */
+
+
+/* BOX MODEL */
+/* Margin | Border | Padding */
+
+ul {
+    background-color: gold;
+    list-style-type:lower-greek;
+}
+
+ul li:nth-child(3) {
+    background-color: goldenrod;
+}
+
+ul li {
+    padding: 10px;
+    margin: 25px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+
+
+
+
+
+/* Padding Margin Border:
+Every box has 4 sides ...
+margin: 0   3px    0     3px;
+       top right bottom  left
+
+border-bottom: 3px solid black;
+             width style color
+
+*/
+
+/* BOX Width
+width:250px;
+mm,cm, px or relative is also ok
+*/
+
+/*
+display:none; does not render the element
+visibility:hidden; elelemt renders but its space looks empty. It has a place holder
+display:inline; put all elemens next to each other until it fills until it run out of space
+it effects the width property as well. 
+
+display: inline-block; mix of inline and block
+
+*/
