@@ -1,0 +1,15 @@
+.test {
+    filter: saturate(75%);
+}
+
+.test1 {
+    filter: drop-shadow(30px 10px 4px black);
+}
+
+.test2 {
+    filter: blur(100px);
+}
+
+.test3 {
+    filter: invert(100%);
+}
